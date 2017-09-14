@@ -3,12 +3,11 @@
  
 var express = require('express');
 var request = require('request');
+var cors = require('cors');
+
 
 var app = express();
-
-
-
-
+app.use(cors());
 app.get("/api",function(req,res){  
   var options = {
   method: 'GET',
